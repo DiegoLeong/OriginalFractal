@@ -1,22 +1,22 @@
-int wi = 1000;
-int hi = 1000;
 public void setup() {
-	size(wi,hi);
-	translate(wi/2,hi/2);
-}
-
-public void draw() {//call stuff here
+	
+	size(1000,1000);
 	
 }
 
-public void frackle(){
+public void draw() { //call stuff here
+	translate(500,500);
+	ellipse(0,0,50,50);
+}
+
+/*public void frackle(){
 	if()
 	{
 		
 	}
 	else()
 	{
-
+		frackle();
 	}	
-}
+}*/
 
