@@ -6,18 +6,18 @@ public void setup() {
 
 public void draw() { //call stuff here
 	translate(500,500);
-	ellipse(0,0,50,50);
+	
 	frackle(10);
 }
 
 public void frackle(int numb){
 	if(numb == 0)
 	{
-		rect(0,0,50,50)
+		ellipse(0,0,50,50);
 	}
 	else
 	{
-		frackle();
+		frackle(numb-1);
 	}	
 }
 
