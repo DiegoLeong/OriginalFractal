@@ -7,17 +7,17 @@ public void setup() {
 public void draw() { //call stuff here
 	translate(500,500);
 	
-	frackle(10);
+	frackle(100,100);
 }
 
-public void frackle(int numb){
-	if(numb == 0)
+public void frackle(int x, int y){
+	if(x == 0 && y == 0)
 	{
-		ellipse(0,0,50,50);
+		ellipse(x,y,50,50);
 	}
 	else
 	{
-		frackle(numb-1);
+		frackle(x-10,y-10);
 	}	
 }
 
