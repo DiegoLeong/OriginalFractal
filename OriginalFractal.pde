@@ -1,23 +1,24 @@
 public void setup() {
-	
+	background(0);
 	size(1000,1000);
-	
 }
 
 public void draw() { //call stuff here
 	translate(500,500);
-	
-	frackle(100,100);
+	noFill();
+	stroke(255,255,255);
+	frackle(0,0,500);
 }
 
-public void frackle(int x, int y){
-	if(x == 0 && y == 0)
+public void frackle(int x, int y, int s){
+	if(s<=20)
 	{
-		ellipse(x,y,50,50);
+		ellipse(x,y,s,s);
 	}
 	else
 	{
-		frackle(x-10,y-10);
+		ellipse(x,y,s,s);
+		frackle(x, y, s-10);
 	}	
 }
 
