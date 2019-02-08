@@ -15,7 +15,7 @@ public void draw() { //call stuff here
 }
 
 public void frackle(int x, int y, int s){
-	if(s <= 10)
+	if(s <= 50)
 	{
 		rect(0,0,10,10);
 
@@ -24,10 +24,10 @@ public void frackle(int x, int y, int s){
 	{
 		rect(x,y,s,s);
 		rect(x,y,s*1.5,s*1.5);
-		rect(x+s/2,y+s/2,s/2,s/2);
-		rect(x+s/2,y-s/2,s/2,s/2);
-		rect(x-s/2,y+s/2,s/2,s/2);
-		rect(x-s/2,y-s/2,s/2,s/2);
+		frackle(x+s/2,y+s/2,s/2);
+		frackle(x+s/2,y-s/2,s/2);
+		frackle(x-s/2,y+s/2,s/2);
+		frackle(x-s/2,y-s/2,s/2);
 	}	
 }
 
