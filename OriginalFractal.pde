@@ -5,20 +5,29 @@ public void setup() {
 
 public void draw() { //call stuff here
 	translate(500,500);
-	gradientFill();
 	stroke(255,255,255);
-	frackle(0,0,500);
+	noFill();
+	rectMode(CENTER);
+	rotate(PI/4);
+	frackle(0,0,400);
+	
+	
 }
 
 public void frackle(int x, int y, int s){
-	if(s<=20)
+	if(s <= 10)
 	{
-		ellipse(x,y,s,s);
+		rect(0,0,10,10);
+
 	}
 	else
 	{
-		ellipse(x,y,s,s);
-		frackle(x, y, s-10);
+		rect(x,y,s,s);
+		rect(x,y,s*1.5,s*1.5);
+		rect(x+s/2,y+s/2,s/2,s/2);
+		rect(x+s/2,y-s/2,s/2,s/2);
+		rect(x-s/2,y+s/2,s/2,s/2);
+		rect(x-s/2,y-s/2,s/2,s/2);
 	}	
 }
 
