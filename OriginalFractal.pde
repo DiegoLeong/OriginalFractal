@@ -5,7 +5,7 @@ public void setup() {
 
 public void draw() { //call stuff here
 	translate(500,500);
-	noFill();
+	gradientFill();
 	stroke(255,255,255);
 	frackle(0,0,500);
 }
