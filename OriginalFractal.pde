@@ -1,15 +1,15 @@
 public void setup() {
 	background(0);
-	size(1200,1200);
+	size(900,900);
 }
 
 public void draw() { //call stuff here
-	translate(600,600);
+	translate(450,450);
 	stroke(255,255,255);
 	noFill();
 	rectMode(CENTER);
 	rotate(PI/4);
-	frackle(0,0,400);
+	frackle(0,0,300);
 	
 	
 }
