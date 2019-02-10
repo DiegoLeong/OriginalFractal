@@ -1,10 +1,10 @@
 public void setup() {
 	background(0);
-	size(1000,1000);
+	size(1200,1200);
 }
 
 public void draw() { //call stuff here
-	translate(500,500);
+	translate(600,600);
 	stroke(255,255,255);
 	noFill();
 	rectMode(CENTER);
